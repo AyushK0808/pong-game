@@ -26,3 +26,6 @@ flag=True
 while flag:
     screen.update()
     time.sleep(0.1)
+
+    if ball.ycor()>280 or ball.ycor()<-280:
+        ball.bounce()
