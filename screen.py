@@ -34,3 +34,10 @@ while flag:
         ball.paddlebounce()
     if ball.distance(l_paddle) <50 and ball.xcor<-320:
         ball.paddlebounce()
+
+    if ball.xcor()>380:
+        ball.reset()
+
+    if ball.xcor()<-380:
+        ball.reset()
+
